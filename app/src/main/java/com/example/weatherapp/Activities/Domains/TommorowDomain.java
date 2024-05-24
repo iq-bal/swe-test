@@ -1,6 +1,6 @@
 package com.example.weatherapp.Activities.Domains;
 
-public class TommorowDomain {
+public class TommorowDomain implements Weather{
     private String day;
     private String picPath;
     private String status;
@@ -19,6 +19,7 @@ public class TommorowDomain {
         return day;
     }
 
+    @Override
     public String getPicPath() {
         return picPath;
     }
